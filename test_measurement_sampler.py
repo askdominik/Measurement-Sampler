@@ -76,7 +76,7 @@ class TestMeasurementSampler(unittest.TestCase):
         self.assertIn(MeasType.HR, sampled)
         self.assertIn(MeasType.TEMP, sampled)
         
-        self.assertEqual(len(sampled[MeasType.SPO2]), 5)  # Updated expected count
+        self.assertEqual(len(sampled[MeasType.SPO2]), 5)
         self.assertEqual(len(sampled[MeasType.HR]), 5)
         self.assertEqual(len(sampled[MeasType.TEMP]), 6)
 
